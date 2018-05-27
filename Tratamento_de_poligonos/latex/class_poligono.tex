@@ -1,0 +1,156 @@
+\section{Referência da Classe Poligono}
+\label{class_poligono}\index{Poligono@{Poligono}}
+
+
+{\ttfamily \#include $<$poligono.\+h$>$}
+
+Diagrama de hierarquia para Poligono\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_poligono}
+\end{center}
+\end{figure}
+\subsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Poligono} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Poligono\+::\+Poligono}{p.}{class_poligono_a9311a9a1496878c09c8508b3636e2870} -\/ Construtor da classe. \end{DoxyCompactList}\item 
+void \textbf{ set\+Vertice} (float x, float y)
+\begin{DoxyCompactList}\small\item\em \doxyref{Poligono\+::set\+Vertice}{p.}{class_poligono_a1d1ca86b608c4427bd39d3753230cc9b} -\/ Seta cada vertice(ponto) \end{DoxyCompactList}\item 
+void \textbf{ quantidade} (void)
+\begin{DoxyCompactList}\small\item\em \doxyref{Poligono\+::quantidade}{p.}{class_poligono_a3f4aa8038324ead841e04ffbbf6d8594} -\/ Retorna a quantidade de vertices ja inseridos. \end{DoxyCompactList}\item 
+void \textbf{ imprimir\+Poli} (void)
+\begin{DoxyCompactList}\small\item\em \doxyref{Poligono\+::imprimir\+Poli}{p.}{class_poligono_a0ee1c2c501af5df6fc844c7772696bc9} -\/ Imprime a estrutura do poligono usando para isso o metodo imprime() ja criado na classe \doxyref{Point}{p.}{class_point}. \end{DoxyCompactList}\item 
+void \textbf{ area\+\_\+poligono} (void)
+\begin{DoxyCompactList}\small\item\em \doxyref{Poligono\+::area\+\_\+poligono}{p.}{class_poligono_aee462c2f38ab2e1ca98f7ecee291ead8} -\/ Calculo da area do poligono usando para isso a tecnica shoelace. \end{DoxyCompactList}\item 
+void \textbf{ translada\+Poli} (float \+\_\+a, float \+\_\+b)
+\begin{DoxyCompactList}\small\item\em \doxyref{Poligono\+::translada\+Poli}{p.}{class_poligono_af79181410a3961117638e993321a67c2} -\/ Translada toda a estrutura do poligono usando para isso o metodo translada(\+\_\+a,\+\_\+b) ja implimentado na classe \doxyref{Point}{p.}{class_point}. \end{DoxyCompactList}\item 
+void \textbf{ rotacionar} (float theta, float x, float y)
+\begin{DoxyCompactList}\small\item\em \doxyref{Poligono\+::rotacionar}{p.}{class_poligono_a62edbbcf29d2b540999a1cd3cb4b1601} -\/ Rotaciona toda a estrutua do poligono. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Point} \textbf{ vertices} [100]
+\item 
+int \textbf{ n\+\_\+vertices} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Construtores e Destrutores}
+\mbox{\label{class_poligono_a9311a9a1496878c09c8508b3636e2870}} 
+\index{Poligono@{Poligono}!Poligono@{Poligono}}
+\index{Poligono@{Poligono}!Poligono@{Poligono}}
+\subsubsection{Poligono()}
+{\footnotesize\ttfamily Poligono\+::\+Poligono (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxyref{Poligono\+::\+Poligono}{p.}{class_poligono_a9311a9a1496878c09c8508b3636e2870} -\/ Construtor da classe. 
+
+
+
+\subsection{Funções membros}
+\mbox{\label{class_poligono_aee462c2f38ab2e1ca98f7ecee291ead8}} 
+\index{Poligono@{Poligono}!area\+\_\+poligono@{area\+\_\+poligono}}
+\index{area\+\_\+poligono@{area\+\_\+poligono}!Poligono@{Poligono}}
+\subsubsection{area\+\_\+poligono()}
+{\footnotesize\ttfamily void Poligono\+::area\+\_\+poligono (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxyref{Poligono\+::area\+\_\+poligono}{p.}{class_poligono_aee462c2f38ab2e1ca98f7ecee291ead8} -\/ Calculo da area do poligono usando para isso a tecnica shoelace. 
+
+\mbox{\label{class_poligono_a0ee1c2c501af5df6fc844c7772696bc9}} 
+\index{Poligono@{Poligono}!imprimir\+Poli@{imprimir\+Poli}}
+\index{imprimir\+Poli@{imprimir\+Poli}!Poligono@{Poligono}}
+\subsubsection{imprimir\+Poli()}
+{\footnotesize\ttfamily void Poligono\+::imprimir\+Poli (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxyref{Poligono\+::imprimir\+Poli}{p.}{class_poligono_a0ee1c2c501af5df6fc844c7772696bc9} -\/ Imprime a estrutura do poligono usando para isso o metodo imprime() ja criado na classe \doxyref{Point}{p.}{class_point}. 
+
+\mbox{\label{class_poligono_a3f4aa8038324ead841e04ffbbf6d8594}} 
+\index{Poligono@{Poligono}!quantidade@{quantidade}}
+\index{quantidade@{quantidade}!Poligono@{Poligono}}
+\subsubsection{quantidade()}
+{\footnotesize\ttfamily void Poligono\+::quantidade (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxyref{Poligono\+::quantidade}{p.}{class_poligono_a3f4aa8038324ead841e04ffbbf6d8594} -\/ Retorna a quantidade de vertices ja inseridos. 
+
+\mbox{\label{class_poligono_a62edbbcf29d2b540999a1cd3cb4b1601}} 
+\index{Poligono@{Poligono}!rotacionar@{rotacionar}}
+\index{rotacionar@{rotacionar}!Poligono@{Poligono}}
+\subsubsection{rotacionar()}
+{\footnotesize\ttfamily void Poligono\+::rotacionar (\begin{DoxyParamCaption}\item[{float}]{theta,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+\doxyref{Poligono\+::rotacionar}{p.}{class_poligono_a62edbbcf29d2b540999a1cd3cb4b1601} -\/ Rotaciona toda a estrutua do poligono. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em theta} & -\/ Angulo para a rotação \\
+\hline
+{\em x} & -\/ Coordenda x do ponto central de rotação \\
+\hline
+{\em y} & -\/ Coordenda y do ponto central de rotação \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_poligono_a1d1ca86b608c4427bd39d3753230cc9b}} 
+\index{Poligono@{Poligono}!set\+Vertice@{set\+Vertice}}
+\index{set\+Vertice@{set\+Vertice}!Poligono@{Poligono}}
+\subsubsection{set\+Vertice()}
+{\footnotesize\ttfamily void Poligono\+::set\+Vertice (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+\doxyref{Poligono\+::set\+Vertice}{p.}{class_poligono_a1d1ca86b608c4427bd39d3753230cc9b} -\/ Seta cada vertice(ponto) 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & -\/ Valor da coordenada x fornecida pelo usuario \\
+\hline
+{\em y} & -\/ Valor da coordenada y fornecida pelo usuario \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_poligono_af79181410a3961117638e993321a67c2}} 
+\index{Poligono@{Poligono}!translada\+Poli@{translada\+Poli}}
+\index{translada\+Poli@{translada\+Poli}!Poligono@{Poligono}}
+\subsubsection{translada\+Poli()}
+{\footnotesize\ttfamily void Poligono\+::translada\+Poli (\begin{DoxyParamCaption}\item[{float}]{\+\_\+a,  }\item[{float}]{\+\_\+b }\end{DoxyParamCaption})}
+
+
+
+\doxyref{Poligono\+::translada\+Poli}{p.}{class_poligono_af79181410a3961117638e993321a67c2} -\/ Translada toda a estrutura do poligono usando para isso o metodo translada(\+\_\+a,\+\_\+b) ja implimentado na classe \doxyref{Point}{p.}{class_point}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+a} & -\/ Unidade de translação da coordenada x \\
+\hline
+{\em \+\_\+b} & -\/ Unidade de translação da coordenada y \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Atributos}
+\mbox{\label{class_poligono_a284269050a0ce8fbe95e2c69b36c5709}} 
+\index{Poligono@{Poligono}!n\+\_\+vertices@{n\+\_\+vertices}}
+\index{n\+\_\+vertices@{n\+\_\+vertices}!Poligono@{Poligono}}
+\subsubsection{n\+\_\+vertices}
+{\footnotesize\ttfamily int Poligono\+::n\+\_\+vertices =0}
+
+\mbox{\label{class_poligono_a18179d267bdf366f6bb00a4e1b16f1d7}} 
+\index{Poligono@{Poligono}!vertices@{vertices}}
+\index{vertices@{vertices}!Poligono@{Poligono}}
+\subsubsection{vertices}
+{\footnotesize\ttfamily \textbf{ Point} Poligono\+::vertices[100]}
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ poligono.\+h}\item 
+\textbf{ poligono.\+cpp}\end{DoxyCompactItemize}

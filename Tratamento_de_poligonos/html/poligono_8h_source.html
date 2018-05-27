@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tratamento de Poligonos: Código-Fonte de poligono.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="a8e0952ce6d90a61a3843b65620a3167.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tratamento de Poligonos
+   &#160;<span id="projectnumber">Beta 2.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">poligono.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="poligono_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef POLIGONO_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define POLIGONO_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="point_8h.html">point.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_poligono.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_poligono.html">Poligono</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_poligono.html#a9311a9a1496878c09c8508b3636e2870">Poligono</a>();</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_poligono.html#a18179d267bdf366f6bb00a4e1b16f1d7">   13</a></span>&#160;    <a class="code" href="class_point.html">Point</a> <a class="code" href="class_poligono.html#a18179d267bdf366f6bb00a4e1b16f1d7">vertices</a>[100]; <span class="comment">//Vetor com 100 pontos que forma o poligono</span></div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_poligono.html#a284269050a0ce8fbe95e2c69b36c5709">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_poligono.html#a284269050a0ce8fbe95e2c69b36c5709">n_vertices</a> =0 ; <span class="comment">//Identificador de cada posição do ponto dentro do vetor</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_poligono.html#a1d1ca86b608c4427bd39d3753230cc9b">setVertice</a>(<span class="keywordtype">float</span> x,<span class="keywordtype">float</span> y); <span class="comment">//Seta as coordenadas de cada ponto do poligono</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_poligono.html#a3f4aa8038324ead841e04ffbbf6d8594">quantidade</a>(<span class="keywordtype">void</span>);  <span class="comment">//Conta a quantidade de vertices</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_poligono.html#a0ee1c2c501af5df6fc844c7772696bc9">imprimirPoli</a>(<span class="keywordtype">void</span>); <span class="comment">//Imprime os pontos da estrutura do poligono</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_poligono.html#aee462c2f38ab2e1ca98f7ecee291ead8">area_poligono</a>(<span class="keywordtype">void</span>);  <span class="comment">//Calcula a area do poligono</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_poligono.html#af79181410a3961117638e993321a67c2">transladaPoli</a>(<span class="keywordtype">float</span> _a, <span class="keywordtype">float</span> _b); <span class="comment">//Translada todos os ponto do poligono</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_poligono.html#a62edbbcf29d2b540999a1cd3cb4b1601">rotacionar</a>(<span class="keywordtype">float</span> theta, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);  <span class="comment">//Rotaciona o poligono em theta graus em relação ao ponto dado</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // POLIGONO_H</span></div><div class="ttc" id="class_poligono_html_a18179d267bdf366f6bb00a4e1b16f1d7"><div class="ttname"><a href="class_poligono.html#a18179d267bdf366f6bb00a4e1b16f1d7">Poligono::vertices</a></div><div class="ttdeci">Point vertices[100]</div><div class="ttdef"><b>Definition:</b> poligono.h:13</div></div>
+<div class="ttc" id="class_poligono_html_a284269050a0ce8fbe95e2c69b36c5709"><div class="ttname"><a href="class_poligono.html#a284269050a0ce8fbe95e2c69b36c5709">Poligono::n_vertices</a></div><div class="ttdeci">int n_vertices</div><div class="ttdef"><b>Definition:</b> poligono.h:14</div></div>
+<div class="ttc" id="class_poligono_html_af79181410a3961117638e993321a67c2"><div class="ttname"><a href="class_poligono.html#af79181410a3961117638e993321a67c2">Poligono::transladaPoli</a></div><div class="ttdeci">void transladaPoli(float _a, float _b)</div><div class="ttdoc">Poligono::transladaPoli - Translada toda a estrutura do poligono usando para isso o metodo translada(...</div><div class="ttdef"><b>Definition:</b> poligono.cpp:55</div></div>
+<div class="ttc" id="point_8h_html"><div class="ttname"><a href="point_8h.html">point.h</a></div></div>
+<div class="ttc" id="class_poligono_html"><div class="ttname"><a href="class_poligono.html">Poligono</a></div><div class="ttdef"><b>Definition:</b> poligono.h:6</div></div>
+<div class="ttc" id="class_poligono_html_a0ee1c2c501af5df6fc844c7772696bc9"><div class="ttname"><a href="class_poligono.html#a0ee1c2c501af5df6fc844c7772696bc9">Poligono::imprimirPoli</a></div><div class="ttdeci">void imprimirPoli(void)</div><div class="ttdoc">Poligono::imprimirPoli - Imprime a estrutura do poligono usando para isso o metodo imprime() ja criad...</div><div class="ttdef"><b>Definition:</b> poligono.cpp:39</div></div>
+<div class="ttc" id="class_poligono_html_a62edbbcf29d2b540999a1cd3cb4b1601"><div class="ttname"><a href="class_poligono.html#a62edbbcf29d2b540999a1cd3cb4b1601">Poligono::rotacionar</a></div><div class="ttdeci">void rotacionar(float theta, float x, float y)</div><div class="ttdoc">Poligono::rotacionar - Rotaciona toda a estrutua do poligono. </div><div class="ttdef"><b>Definition:</b> poligono.cpp:88</div></div>
+<div class="ttc" id="class_poligono_html_a1d1ca86b608c4427bd39d3753230cc9b"><div class="ttname"><a href="class_poligono.html#a1d1ca86b608c4427bd39d3753230cc9b">Poligono::setVertice</a></div><div class="ttdeci">void setVertice(float x, float y)</div><div class="ttdoc">Poligono::setVertice - Seta cada vertice(ponto) </div><div class="ttdef"><b>Definition:</b> poligono.cpp:20</div></div>
+<div class="ttc" id="class_poligono_html_a9311a9a1496878c09c8508b3636e2870"><div class="ttname"><a href="class_poligono.html#a9311a9a1496878c09c8508b3636e2870">Poligono::Poligono</a></div><div class="ttdeci">Poligono()</div><div class="ttdoc">Poligono::Poligono - Construtor da classe. </div><div class="ttdef"><b>Definition:</b> poligono.cpp:11</div></div>
+<div class="ttc" id="class_poligono_html_aee462c2f38ab2e1ca98f7ecee291ead8"><div class="ttname"><a href="class_poligono.html#aee462c2f38ab2e1ca98f7ecee291ead8">Poligono::area_poligono</a></div><div class="ttdeci">void area_poligono(void)</div><div class="ttdoc">Poligono::area_poligono - Calculo da area do poligono usando para isso a tecnica shoelace. </div><div class="ttdef"><b>Definition:</b> poligono.cpp:66</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdef"><b>Definition:</b> point.h:4</div></div>
+<div class="ttc" id="class_poligono_html_a3f4aa8038324ead841e04ffbbf6d8594"><div class="ttname"><a href="class_poligono.html#a3f4aa8038324ead841e04ffbbf6d8594">Poligono::quantidade</a></div><div class="ttdeci">void quantidade(void)</div><div class="ttdoc">Poligono::quantidade - Retorna a quantidade de vertices ja inseridos. </div><div class="ttdef"><b>Definition:</b> poligono.cpp:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
