@@ -1,0 +1,56 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_ac5b669957c442b6eb68573dacfce33e1}\label{class_main_window_ac5b669957c442b6eb68573dacfce33e1}} 
+void \mbox{\hyperlink{class_main_window_ac5b669957c442b6eb68573dacfce33e1}{tcp\+Connect}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_ac5b669957c442b6eb68573dacfce33e1}{Main\+Window\+::tcp\+Connect}} -\/ Estabelece a conexão com o servidor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}\label{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}} 
+void \mbox{\hyperlink{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}{tcp\+Disconnect}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}{Main\+Window\+::tcp\+Disconnect}} -\/ finaliza a conexão com o servidor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}\label{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}} 
+void \mbox{\hyperlink{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}{put\+Data}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}{Main\+Window\+::put\+Data}} -\/ Envia os dados para o servidor usando para isso um temporizador. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_main_window_a57a1f8959ed5f0eee73281829b2331fa}{get\+Host}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a57a1f8959ed5f0eee73281829b2331fa}{Main\+Window\+::get\+Host}} -\/ Captura o ID do servidor contido no campo line\+Edit\+\_\+\+Host. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}\label{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}} 
+void \mbox{\hyperlink{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}{stop\+Data}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}{Main\+Window\+::stop\+Data}} -\/ \char`\"{}\+Mata\char`\"{} o temporizador e para o envio de dados. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a9d08a694a5f9c532225754381b8011ea}\label{class_main_window_a9d08a694a5f9c532225754381b8011ea}} 
+void \mbox{\hyperlink{class_main_window_a9d08a694a5f9c532225754381b8011ea}{timer\+Event}} (Q\+Timer\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a9d08a694a5f9c532225754381b8011ea}{Main\+Window\+::timer\+Event}} -\/ Repete o \mbox{\hyperlink{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}{put\+Data()}} de acordo com a quantidade de milissegundos fornecidos pelo usuário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+{\bfseries Main\+Window} (Q\+Widget $\ast$parent=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a57a1f8959ed5f0eee73281829b2331fa}\label{class_main_window_a57a1f8959ed5f0eee73281829b2331fa}} 
+\index{Main\+Window@{Main\+Window}!get\+Host@{get\+Host}}
+\index{get\+Host@{get\+Host}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{get\+Host}{getHost}}
+{\footnotesize\ttfamily Q\+String Main\+Window\+::get\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a57a1f8959ed5f0eee73281829b2331fa}{Main\+Window\+::get\+Host}} -\/ Captura o ID do servidor contido no campo line\+Edit\+\_\+\+Host. 
+
+\begin{DoxyReturn}{Returns}
+-\/ Retorna o ip que sera usado no \mbox{\hyperlink{class_main_window_ac5b669957c442b6eb68573dacfce33e1}{tcp\+Connect()}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}
