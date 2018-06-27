@@ -1,0 +1,125 @@
+\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ tcp\+Connect} (void)
+\begin{DoxyCompactList}\small\item\em \doxyref{Main\+Window\+::tcp\+Connect}{p.}{class_main_window_a26b6030035e196b64333906db8302cdd} -\/ Conecta com o servidor. \end{DoxyCompactList}\item 
+void \textbf{ tcp\+Disconnect} (void)
+\begin{DoxyCompactList}\small\item\em \doxyref{Main\+Window\+::tcp\+Disconnect}{p.}{class_main_window_a3389bbbe4222f115a7609037a1a63bd5} -\/ Disconecta do servidor. \end{DoxyCompactList}\item 
+void \textbf{ get\+Data} (void)
+\begin{DoxyCompactList}\small\item\em \doxyref{Main\+Window\+::get\+Data}{p.}{class_main_window_ac6d3a5fa8ef8ede69436b9e9a6ee80c1} -\/ Inicia a a captura de dados. \end{DoxyCompactList}\item 
+void \textbf{ stop\+Data} (void)
+\begin{DoxyCompactList}\small\item\em \doxyref{Main\+Window\+::stop\+Data}{p.}{class_main_window_a2e3dceeb08f18cc1d07e42b79fe7a0c1} -\/ Mata o temporizador e encerra o \doxyref{get\+Data()}{p.}{class_main_window_ac6d3a5fa8ef8ede69436b9e9a6ee80c1};. \end{DoxyCompactList}\item 
+void \textbf{ update\+Ip} (void)
+\begin{DoxyCompactList}\small\item\em Atualiza lista de clientes produtores conectados. \end{DoxyCompactList}\item 
+void \textbf{ timer\+Event} (Q\+Timer\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em Time event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Main\+Window} (Q\+Widget $\ast$parent=0)
+\item 
+\textbf{ $\sim$\+Main\+Window} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{Main\+Window()}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{Main\+Window@{Main\+Window}!````~Main\+Window@{$\sim$\+Main\+Window}}
+\index{````~Main\+Window@{$\sim$\+Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{$\sim$\+Main\+Window()}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_main_window_ac6d3a5fa8ef8ede69436b9e9a6ee80c1}} 
+\index{Main\+Window@{Main\+Window}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Main\+Window@{Main\+Window}}
+\subsubsection{get\+Data}
+{\footnotesize\ttfamily void Main\+Window\+::get\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\doxyref{Main\+Window\+::get\+Data}{p.}{class_main_window_ac6d3a5fa8ef8ede69436b9e9a6ee80c1} -\/ Inicia a a captura de dados. 
+
+Pega os dados no intervalo de 30 em 30 amostras com um tempo determinado pelo usuário \mbox{\label{class_main_window_a2e3dceeb08f18cc1d07e42b79fe7a0c1}} 
+\index{Main\+Window@{Main\+Window}!stop\+Data@{stop\+Data}}
+\index{stop\+Data@{stop\+Data}!Main\+Window@{Main\+Window}}
+\subsubsection{stop\+Data}
+{\footnotesize\ttfamily void Main\+Window\+::stop\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\doxyref{Main\+Window\+::stop\+Data}{p.}{class_main_window_a2e3dceeb08f18cc1d07e42b79fe7a0c1} -\/ Mata o temporizador e encerra o \doxyref{get\+Data()}{p.}{class_main_window_ac6d3a5fa8ef8ede69436b9e9a6ee80c1};. 
+
+\mbox{\label{class_main_window_a26b6030035e196b64333906db8302cdd}} 
+\index{Main\+Window@{Main\+Window}!tcp\+Connect@{tcp\+Connect}}
+\index{tcp\+Connect@{tcp\+Connect}!Main\+Window@{Main\+Window}}
+\subsubsection{tcp\+Connect}
+{\footnotesize\ttfamily void Main\+Window\+::tcp\+Connect (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\doxyref{Main\+Window\+::tcp\+Connect}{p.}{class_main_window_a26b6030035e196b64333906db8302cdd} -\/ Conecta com o servidor. 
+
+\mbox{\label{class_main_window_a3389bbbe4222f115a7609037a1a63bd5}} 
+\index{Main\+Window@{Main\+Window}!tcp\+Disconnect@{tcp\+Disconnect}}
+\index{tcp\+Disconnect@{tcp\+Disconnect}!Main\+Window@{Main\+Window}}
+\subsubsection{tcp\+Disconnect}
+{\footnotesize\ttfamily void Main\+Window\+::tcp\+Disconnect (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\doxyref{Main\+Window\+::tcp\+Disconnect}{p.}{class_main_window_a3389bbbe4222f115a7609037a1a63bd5} -\/ Disconecta do servidor. 
+
+\mbox{\label{class_main_window_a9d08a694a5f9c532225754381b8011ea}} 
+\index{Main\+Window@{Main\+Window}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{timer\+Event}
+{\footnotesize\ttfamily void Main\+Window\+::timer\+Event (\begin{DoxyParamCaption}\item[{Q\+Timer\+Event $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Time event. 
+
+\doxyref{Main\+Window\+::timer\+Event}{p.}{class_main_window_a9d08a694a5f9c532225754381b8011ea} -\/ Configura o temporizador.
+
+função que faz o \doxyref{get\+Data(void)}{p.}{class_main_window_ac6d3a5fa8ef8ede69436b9e9a6ee80c1} ser chamado no tempo determinado pelo usuário
+
+
+\begin{DoxyItemize}
+\item Configura o \doxyref{get\+Data()}{p.}{class_main_window_ac6d3a5fa8ef8ede69436b9e9a6ee80c1} de acordo com o intervalo fornecido pelo usuario 
+\end{DoxyItemize}\mbox{\label{class_main_window_a6d5ab019a97676b4edfe7d4b6a541455}} 
+\index{Main\+Window@{Main\+Window}!update\+Ip@{update\+Ip}}
+\index{update\+Ip@{update\+Ip}!Main\+Window@{Main\+Window}}
+\subsubsection{update\+Ip}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Ip (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Atualiza lista de clientes produtores conectados. 
+
+\doxyref{Main\+Window\+::update\+Ip}{p.}{class_main_window_a6d5ab019a97676b4edfe7d4b6a541455} -\/ Atualiza a lista de produtores conectados. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ mainwindow.\+h}\item 
+\textbf{ mainwindow.\+cpp}\end{DoxyCompactItemize}

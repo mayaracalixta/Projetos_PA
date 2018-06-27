@@ -1,0 +1,78 @@
+\section{Plotter Class Reference}
+\label{class_plotter}\index{Plotter@{Plotter}}
+
+
+{\ttfamily \#include $<$plotter.\+h$>$}
+
+Inheritance diagram for Plotter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_plotter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Plotter} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Construtor do \doxyref{Plotter}{p.}{class_plotter}. \end{DoxyCompactList}\item 
+void \textbf{ paint\+Event} (Q\+Paint\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em Paint event. \end{DoxyCompactList}\item 
+void \textbf{ load\+Data} (std\+::vector$<$ double $>$, std\+::vector$<$ double $>$)
+\begin{DoxyCompactList}\small\item\em Função que carrega dados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_plotter_a367b6890c36910a27ec710ac3693e64b}} 
+\index{Plotter@{Plotter}!Plotter@{Plotter}}
+\index{Plotter@{Plotter}!Plotter@{Plotter}}
+\subsubsection{Plotter()}
+{\footnotesize\ttfamily Plotter\+::\+Plotter (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construtor do \doxyref{Plotter}{p.}{class_plotter}. 
+
+\doxyref{Plotter\+::\+Plotter}{p.}{class_plotter_a367b6890c36910a27ec710ac3693e64b} -\/ Plota o grafico no intervalo de 30 em 30 dados.
+
+seta valores aos vectors tempos e dados para evitar problemas com \char`\"{}lixos\char`\"{} 
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_plotter_ae73b5093b98bbbebd6abdb4e7e7807ed}} 
+\index{Plotter@{Plotter}!load\+Data@{load\+Data}}
+\index{load\+Data@{load\+Data}!Plotter@{Plotter}}
+\subsubsection{load\+Data()}
+{\footnotesize\ttfamily void Plotter\+::load\+Data (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{,  }\item[{std\+::vector$<$ double $>$}]{ }\end{DoxyParamCaption})}
+
+
+
+Função que carrega dados. 
+
+\doxyref{Plotter\+::load\+Data}{p.}{class_plotter_ae73b5093b98bbbebd6abdb4e7e7807ed} -\/ Captura os dados e envia para o plotter.
+
+pega os 30 ultimos dados e envia para o paint\+Event
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ Vetor com os dados sobre o tempo \\
+\hline
+{\em d} & -\/ Vetor com dados capturados \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_plotter_ac4341569909943e37e1ff756587e6e12}} 
+\index{Plotter@{Plotter}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Plotter@{Plotter}}
+\subsubsection{paint\+Event()}
+{\footnotesize\ttfamily void Plotter\+::paint\+Event (\begin{DoxyParamCaption}\item[{Q\+Paint\+Event $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Paint event. 
+
+\doxyref{Plotter\+::paint\+Event}{p.}{class_plotter_ac4341569909943e37e1ff756587e6e12} -\/ Responsavel por desenhar o grafico.
+
+desenha retas usando dois pontos por vez. Além disso, o eixo y para que a origem se encontre no canto inferior esquerdo. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ plotter.\+h}\item 
+\textbf{ plotter.\+cpp}\end{DoxyCompactItemize}
